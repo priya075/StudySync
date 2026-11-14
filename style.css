@@ -36,7 +36,7 @@ body{
 
 .logo{
 
-    
+    display: flex;
     font-size: 1.2rem;
     font-weight: bold;
     color: var(--text-color);
@@ -51,9 +51,15 @@ body{
 }
 
 .nav{
-    display: flex;
+    display: none;
     gap: 1rem;
     align-items: center;
+}
+
+@media screen and (min-width: 578px){
+    .nav{
+        display: flex;
+    }
 }
 
 .nav_link{
@@ -68,6 +74,7 @@ body{
 }
 
 .contact_btn{
+    display: none;
     border:none;
     border-radius: 0.3rem;
     background-color: var(--primary-color);
@@ -78,6 +85,62 @@ body{
     font-weight: 550;
 }
 
+@media screen and (min-width: 578px){
+    .contact_btn{
+        display: block;
+    }
+}
 .contact_btn:hover{
     background-color:#5254f8;
+}
+
+.menu_btn{
+    display:none;
+    border: none;
+    border-radius: 0.3rem;
+        font-size: 0.8rem;
+    font-weight: 550;
+}
+
+@media screen and (max-width: 578px){
+    .menu_btn{
+        display: block;
+    }
+}
+
+.menu-icon{
+    border: none;
+    height: 1.3rem;
+    width: 1.5rem;
+}
+
+
+
+
+.main-content{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 700px;
+        margin: 0 auto;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.left-content{
+    text-align: center;
+    animation: contentSlide 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes contentSlide{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
