@@ -23,7 +23,7 @@ body{
     height: 100vh;
     text-align: center;
     background-color: var(--background-color);
-    padding: 1.3rem;
+    /* padding: 1.3rem; */
 }
 
 .header-content {
@@ -329,7 +329,115 @@ body{
     }
 
     .company-title{
-        font-size: 1.1rem;
-        font-weight: 700;
+        font-size: 1.4rem;
+        font-weight: 800;
+    }
+}
+
+.advantages-container{
+    background-color: var(--light-gray);
+}
+
+.main-card-header{
+    font-size: 1.5rem;
+    font-weight: 850;
+    /* padding: 1rem; */
+    margin-top: 1.4rem;
+    color: var(--text-color);
+}
+
+.cards-container{
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+.main-card-info{
+    text-align: center;
+    font-size: 0.8rem;
+    padding-bottom: 1.4rem;
+    color: var(--gray);
+}
+
+.cards-header{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.cards-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0.9rem;
+}
+
+.subcard-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    color: var(--background-color);
+}
+
+.subcard-title{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.subcard-text{
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.subcard-img{
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--background-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-img{
+    height: 1rem;
+    width: 1rem;
+}
+
+.subcard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    border-radius: 0.7rem;
+    padding: 1.1rem;
+}
+
+.subcard:nth-child(1){
+    background-color: #5e93f0;
+}
+
+.subcard:nth-child(2){
+    background-color: #ff6289;
+}
+
+.subcard:nth-child(3){
+    background-color: #fcbf58;
+}
+
+.subcard:nth-child(4){
+    background-color: #44bfc3;
+}
+
+.subcard:nth-child(5){
+    background-color: #77b05d;
+}
+
+.subcard:nth-child(6){
+    background-color: #7d78b1;
+}
+
+@media screen and (max-width: 842px){
+    .cards-grid{
+        grid-template-columns: repeat(1,1fr);
+        margin: 0 1rem;
     }
 }
